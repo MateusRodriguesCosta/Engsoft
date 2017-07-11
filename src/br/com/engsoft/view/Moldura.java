@@ -71,6 +71,9 @@ public class Moldura extends javax.swing.JFrame {
         jDesktopPane.setBackground(new java.awt.Color(0, 51, 102));
         jDesktopPane.setLayout(new java.awt.CardLayout());
 
+        jMenuBar1.setDoubleBuffered(true);
+        jMenuBar1.setFocusTraversalPolicyProvider(true);
+
         jMenu1.setText("Principal");
 
         registroSistema.setText("Cadastros do sistema");
@@ -167,11 +170,11 @@ public class Moldura extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane)
+            .addComponent(jDesktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 492, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane)
+            .addComponent(jDesktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
         );
 
         pack();
